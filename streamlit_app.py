@@ -18,17 +18,17 @@ AUTO_ACCESS = os.environ.get('AUTO_ACCESS', 'false').lower() == 'true'  # false�
 FILE_PATH = os.environ.get('FILE_PATH', './.cache')      # 运行路径,sub.txt保存路径
 SUB_PATH = os.environ.get('SUB_PATH', 'sub')              # 订阅token,默认sub，例如：https://www.google.com/sub
 UUID = os.environ.get('UUID', '20e6e496-cf19-45c8-b883-14f5e11cd9f1')  # UUID,如使用哪吒v1,在不同的平台部署需要修改,否则会覆盖
-NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')        # 哪吒面板域名或ip, v1格式: nezha.xxx.com:8008, v0格式: nezha.xxx.com
-NEZHA_PORT = os.environ.get('NEZHA_PORT', '')            # v1哪吒请留空, v0哪吒的agent通信端口,自动匹配tls
-NEZHA_KEY = os.environ.get('NEZHA_KEY', '')              # v1哪吒的NZ_CLIENT_SECRET或v0哪吒agent密钥
-ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')          # Argo固定隧道域名,留空即使用临时隧道
-ARGO_AUTH = os.environ.get('ARGO_AUTH', '')              # Argo固定隧道密钥,留空即使用临时隧道
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nezhak2.btpp.ggff.net')        # 哪吒面板域名或ip, v1格式: nezha.xxx.com:8008, v0格式: nezha.xxx.com
+NEZHA_PORT = os.environ.get('NEZHA_PORT', '443')            # v1哪吒请留空, v0哪吒的agent通信端口,自动匹配tls
+NEZHA_KEY = os.environ.get('NEZHA_KEY', 'dJUa1l353oyfOT2bj4')              # v1哪吒的NZ_CLIENT_SECRET或v0哪吒agent密钥
+ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'streamlitbtpp12.btpp.ggff.net')          # Argo固定隧道域名,留空即使用临时隧道
+ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiYmJmMDc4YjVkYjlhMzcwMmFiYTg3OGQyODYxMDUwMDciLCJ0IjoiYzdlOTg0YTAtZGM0Yy00ZjBjLTgwZTgtMjFmZjY4MTY2N2NiIiwicyI6Ik16QTFPVFkzTkRZdFlUVXdOeTAwWTJJd0xUZzVPRE10WVRFM016a3dabU00WldWaCJ9')              # Argo固定隧道密钥,留空即使用临时隧道
 ARGO_PORT = int(os.environ.get('PORT', '8001'))
 CFIP = os.environ.get('CFIP', 'cf.877774.xyz')          # 优选ip或优选域名
 CFPORT = int(os.environ.get('CFPORT', '443'))            # 优选ip或优选域名对应端口
-NAME = os.environ.get('NAME', 'Stream')                      # 节点名称
-CHAT_ID = os.environ.get('CHAT_ID', '')                  # Telegram chat_id,推送节点到tg,两个变量同时填写才会推送
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '')              # Telegram bot_token
+NAME = os.environ.get('NAME', 'Streamlit-btpp12')                      # 节点名称
+CHAT_ID = os.environ.get('CHAT_ID', '644320820')                  # Telegram chat_id,推送节点到tg,两个变量同时填写才会推送
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '7935239797:AAHuQ9jZt-cNjcgjqQ9HH0JzkSWlD53EttM')              # Telegram bot_token
 
 # Create running folder
 def create_directory():
